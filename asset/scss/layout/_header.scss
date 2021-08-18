@@ -1,0 +1,9 @@
+.l-header {
+	position: sticky;
+	top: 0;
+
+	&__content {
+		display: flex;
+		justify-content: space-between;
+	}
+}

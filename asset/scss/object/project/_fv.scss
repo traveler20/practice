@@ -1,0 +1,21 @@
+.p-fv {
+	background-color: $color-main;
+	color: $color-base;
+
+	&__content {
+		display: flex;
+
+		figcaption {
+			flex: 3;
+		}
+		h1 {
+			font-size: 5.6rem;
+		}
+		p {
+			font-size: 2.4rem;
+		}
+		img {
+			flex: 1;
+		}
+	}
+}

@@ -1,0 +1,66 @@
+/* base
+--------------------------- */
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+html {
+	font-size: 62.5%;
+	line-height: 1.6;
+	height: 100%;
+	scroll-behavior: smooth;
+}
+body {
+	color: #333333;
+	font-size: 1.6rem;
+	font-family: "Noto Sans JP", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",
+		Arial, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic,
+		"メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	min-width: 350px;
+	width: 100%;
+	overflow-x: hidden;
+}
+
+img,
+video,
+object {
+	max-width: 100%;
+	height: auto;
+	border: none;
+	display: block;
+}
+a {
+	color: #0066c0;
+	text-decoration: underline;
+	transition: 0.4s;
+}
+a:hover {
+	opacity: 0.8;
+}
+a:hover img {
+	text-decoration: none;
+	opacity: 0.8;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+@mixin breakpoint($point) {
+	@if $point == tablet {
+		@media (min-width: 640px) {
+			@content;
+		}
+	}
+	@if $point == pc {
+		@media (min-width: 750px) {
+			@content;
+		}
+	}
+}
