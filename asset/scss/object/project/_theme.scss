@@ -1,0 +1,23 @@
+.p-theme {
+	&__content {
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+		gap: 32px;
+	}
+	&__lists {
+		font-size: 2rem;
+		li {
+			position: relative;
+			padding-left: 24px;
+			margin: 10px;
+			&:before {
+				font-family: "Font Awesome 5 Free";
+				content: "\f00c";
+				font-weight: 900;
+				left: 0;
+				position: absolute;
+			}
+		}
+	}
+}

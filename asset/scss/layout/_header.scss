@@ -1,6 +1,8 @@
 .l-header {
 	position: sticky;
 	top: 0;
+	background-color: $color-base;
+	z-index: 1;
 
 	&__content {
 		display: flex;

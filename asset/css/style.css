@@ -59,11 +59,17 @@ a:hover img {
 .l-header {
   position: sticky;
   top: 0;
+  background-color: #fff;
+  z-index: 1;
 }
 
 .l-header__content {
   display: flex;
   justify-content: space-between;
+}
+
+.l-footer {
+  margin: 0 auto;
 }
 
 /*--------------------------------------*
@@ -90,10 +96,11 @@ a:hover img {
 .c-inner {
   padding: 10px 30px;
   max-width: 1220px;
+  margin: 0 auto;
 }
 
 .c-section {
-  padding: 20px 0 30px;
+  padding: 50px 0 90px;
   background-color: #f6fff7;
 }
 
@@ -105,6 +112,7 @@ a:hover img {
   text-align: center;
   font-size: 2.8rem;
   font-weight: bold;
+  margin-bottom: 38px;
 }
 
 /*-------------------
@@ -117,14 +125,29 @@ a:hover img {
 
 .p-fv__content {
   display: flex;
+  padding: 60px 0;
 }
 
 .p-fv__content figcaption {
-  flex: 3;
+  flex: 2;
 }
 
 .p-fv__content h1 {
   font-size: 5.6rem;
+  line-height: 1.2;
+  margin-bottom: 40px;
+}
+
+.p-fv__content h1 .text-100 {
+  font-size: 10rem;
+}
+
+.p-fv__content h1 .text-96 {
+  font-size: 9.6rem;
+}
+
+.p-fv__content h1 .text-80 {
+  font-size: 8rem;
 }
 
 .p-fv__content p {
@@ -135,7 +158,35 @@ a:hover img {
   flex: 1;
 }
 
+.p-theme__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 32px;
+}
+
+.p-theme__lists {
+  font-size: 2rem;
+}
+
+.p-theme__lists li {
+  position: relative;
+  padding-left: 24px;
+  margin: 10px;
+}
+
+.p-theme__lists li:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f00c";
+  font-weight: 900;
+  left: 0;
+  position: absolute;
+}
+
 /*-------------------
  * object
  -------------------*/
+.u-inline-block {
+  display: inline-block;
+}
 /*# sourceMappingURL=style.css.map */
