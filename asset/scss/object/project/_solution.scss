@@ -1,0 +1,17 @@
+.p-solution {
+	&__lists {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+		align-items: stretch;
+		gap: 10px;
+	}
+	&__list {
+		text-align: center;
+		background-color: $color-gray;
+		border-radius: 4px;
+		p {
+			padding: 10px 16px;
+		}
+	}
+}

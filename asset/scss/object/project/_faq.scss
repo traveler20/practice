@@ -1,0 +1,63 @@
+.p-faq {
+	&__content {
+		max-width: 700px;
+		margin: 0 auto;
+	}
+	&__details {
+		margin-bottom: 5px;
+	}
+	&__summary {
+		position: relative;
+		display: block;
+		padding: 10px 20px;
+		font-weight: bold;
+		background-color: $color-main-200;
+		cursor: pointer;
+		transition: 0.2s;
+		&:hover {
+			background-color: $color-main-300;
+		}
+		&::-webkit-details-marker {
+			display: none;
+		}
+		&:after {
+			position: absolute;
+			font-family: "Font Awesome 5 Free";
+			content: "\f067";
+			font-weight: bold;
+			font-size: 20px;
+			color: $color-main;
+			margin: auto;
+			top: 16%;
+			right: 3%;
+			transition: 0.4s;
+		}
+	}
+	&__answer {
+		padding: 10px 20px;
+		margin-bottom: 20px;
+		background-color: $color-base;
+	}
+
+	&__details[open] {
+		.p-faq__summary {
+			background-color: $color-main-300;
+			&:after {
+				transform: rotate(45deg);
+			}
+		}
+		.p-faq__answer {
+			animation: fadeIn 0.5s ease;
+			@keyframes fadeIn {
+				0% {
+					opacity: 0;
+					transform: translateY(-10px);
+				}
+				100% {
+					opacity: 1;
+					transform: none;
+				}
+			}
+		}
+	}
+}

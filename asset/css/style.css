@@ -70,6 +70,25 @@ a:hover img {
 
 .l-footer {
   margin: 0 auto;
+  background-color: #333;
+  color: #fff;
+}
+
+.l-footer__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 30px 0;
+}
+
+.l-footer__list {
+  display: flex;
+  gap: 10px;
+  padding: 0 0 30px;
+}
+
+.l-footer__list a {
+  color: #fff;
 }
 
 /*--------------------------------------*
@@ -181,6 +200,107 @@ a:hover img {
   font-weight: 900;
   left: 0;
   position: absolute;
+}
+
+.p-solution__lists {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: stretch;
+  gap: 10px;
+}
+
+.p-solution__list {
+  text-align: center;
+  background-color: #efefef;
+  border-radius: 4px;
+}
+
+.p-solution__list p {
+  padding: 10px 16px;
+}
+
+.p-faq__content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.p-faq__details {
+  margin-bottom: 5px;
+}
+
+.p-faq__summary {
+  position: relative;
+  display: block;
+  padding: 10px 20px;
+  font-weight: bold;
+  background-color: #a0daa8;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.p-faq__summary:hover {
+  background-color: #6ebe79;
+}
+
+.p-faq__summary::-webkit-details-marker {
+  display: none;
+}
+
+.p-faq__summary:after {
+  position: absolute;
+  font-family: "Font Awesome 5 Free";
+  content: "\f067";
+  font-weight: bold;
+  font-size: 20px;
+  color: #1b7c26;
+  margin: auto;
+  top: 16%;
+  right: 3%;
+  transition: 0.4s;
+}
+
+.p-faq__answer {
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+
+.p-faq__details[open] .p-faq__summary {
+  background-color: #6ebe79;
+}
+
+.p-faq__details[open] .p-faq__summary:after {
+  transform: rotate(45deg);
+}
+
+.p-faq__details[open] .p-faq__answer {
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.p-cv__content {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.p-cv .c-button {
+  display: block;
+  margin: 10px auto;
+  font-size: 3.2rem;
+  border: 5px solid #ffc042;
+  border-radius: 50px;
 }
 
 /*-------------------
