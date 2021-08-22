@@ -5,6 +5,11 @@
 		align-items: center;
 		justify-content: space-evenly;
 		gap: 32px;
+		img {
+			width: 420px;
+			height: 320px;
+			object-fit: cover;
+		}
 	}
 	&__lists {
 		font-size: 2rem;
