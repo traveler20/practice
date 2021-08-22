@@ -144,7 +144,12 @@ a:hover img {
 
 .p-fv__content {
   display: flex;
-  padding: 60px 0;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 18px;
+  padding: 40px 0;
+  max-width: 100%;
 }
 
 .p-fv__content figcaption {
@@ -152,33 +157,59 @@ a:hover img {
 }
 
 .p-fv__content h1 {
-  font-size: 5.6rem;
+  font-size: 2.8rem;
   line-height: 1.2;
   margin-bottom: 40px;
 }
 
 .p-fv__content h1 .text-100 {
-  font-size: 10rem;
+  font-size: 5rem;
 }
 
 .p-fv__content h1 .text-96 {
-  font-size: 9.6rem;
+  font-size: 4.8rem;
 }
 
 .p-fv__content h1 .text-80 {
-  font-size: 8rem;
+  font-size: 4rem;
 }
 
 .p-fv__content p {
-  font-size: 2.4rem;
+  font-size: 2.2rem;
 }
 
 .p-fv__content img {
   flex: 1;
 }
 
+@media (min-width: 750px) {
+  .p-fv__content {
+    flex-direction: row;
+    padding: 60px 0;
+  }
+  .p-fv__content figcaption {
+    flex: 2;
+  }
+  .p-fv__content h1 {
+    font-size: 5.6rem;
+  }
+  .p-fv__content h1 .text-100 {
+    font-size: 10rem;
+  }
+  .p-fv__content h1 .text-96 {
+    font-size: 9.6rem;
+  }
+  .p-fv__content h1 .text-80 {
+    font-size: 8rem;
+  }
+  .p-fv__content p {
+    font-size: 2.4rem;
+  }
+}
+
 .p-theme__content {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
   gap: 32px;
@@ -298,9 +329,15 @@ a:hover img {
 .p-cv .c-button {
   display: block;
   margin: 10px auto;
-  font-size: 3.2rem;
+  font-size: 2rem;
   border: 5px solid #ffc042;
   border-radius: 50px;
+}
+
+@media (min-width: 750px) {
+  .p-cv .c-button {
+    font-size: 3.2rem;
+  }
 }
 
 /*-------------------

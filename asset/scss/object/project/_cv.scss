@@ -9,8 +9,15 @@
 		display: block;
 		margin: 10px auto;
 
-		font-size: 3.2rem;
+		font-size: 2rem;
 		border: 5px solid $color-accent;
 		border-radius: 50px;
+	}
+	@include breakpoint(tablet) {
+	}
+	@include breakpoint(pc) {
+		.c-button {
+			font-size: 3.2rem;
+		}
 	}
 }
