@@ -35,6 +35,8 @@
 		img {
 			flex: 1;
 			width: 250px;
+			box-shadow: -6px 6px 10px -2px #555, 0 0 3px #555;
+			border-radius: 3px;
 		}
 	}
 	@include breakpoint(tablet) {

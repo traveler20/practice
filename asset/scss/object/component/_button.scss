@@ -1,10 +1,10 @@
 .c-button {
 	display: inline-block;
-	padding: 3px 10px;
+	padding: 3px 20px;
 	color: $color-base;
 	background-color: $color-accent;
 	border: solid 1px $color-accent;
-	border-radius: 4px;
+	border-radius: 50px;
 	text-decoration: none;
 	&:hover {
 		color: $color-accent;
