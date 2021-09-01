@@ -18,14 +18,12 @@ html {
 body {
 	color: #333333;
 	font-size: 1.6rem;
-	font-family: "Noto Sans JP", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",
-		Arial, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic,
-		"メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN",
+		"Hiragino Sans", Meiryo, sans-serif;
 	min-width: 350px;
 	width: 100%;
 	overflow-x: hidden;
 }
-
 img,
 video,
 object {
@@ -34,22 +32,23 @@ object {
 	border: none;
 	display: block;
 }
+
 a {
 	color: #0066c0;
 	text-decoration: underline;
 	transition: 0.4s;
-}
-a:hover {
-	opacity: 0.8;
-}
-a:hover img {
-	text-decoration: none;
-	opacity: 0.8;
-	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	-ms-transition: all 0.3s;
-	-o-transition: all 0.3s;
-	transition: all 0.3s;
+	&:hover {
+		text-decoration: none;
+		img {
+			text-decoration: none;
+			opacity: 0.8;
+			-webkit-transition: all 0.3s;
+			-moz-transition: all 0.3s;
+			-ms-transition: all 0.3s;
+			-o-transition: all 0.3s;
+			transition: all 0.3s;
+		}
+	}
 }
 
 @mixin breakpoint($point) {
