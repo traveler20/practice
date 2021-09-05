@@ -3,8 +3,9 @@
 	padding: 3px 20px;
 	color: $color-base;
 	background-color: $color-accent;
-	border: solid 1px $color-accent;
+	border: solid 2px $color-accent;
 	border-radius: 50px;
+	font-weight: bold;
 	text-decoration: none;
 	&:hover {
 		color: $color-accent;

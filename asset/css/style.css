@@ -74,7 +74,6 @@ a:hover img {
 }
 
 .l-footer {
-  margin: 0 auto;
   background-color: #333;
   color: #fff;
 }
@@ -107,8 +106,9 @@ a:hover img {
   padding: 3px 20px;
   color: #fff;
   background-color: #ffc042;
-  border: solid 1px #ffc042;
+  border: solid 2px #ffc042;
   border-radius: 50px;
+  font-weight: bold;
   text-decoration: none;
 }
 
@@ -155,6 +155,7 @@ a:hover img {
   gap: 18px;
   padding: 40px 0;
   max-width: 100%;
+  font-weight: bold;
 }
 
 .p-fv__content figcaption {
@@ -257,6 +258,7 @@ a:hover img {
 
 .p-solution__list {
   text-align: center;
+  font-weight: bold;
   background-color: #efefef;
   border-radius: 4px;
 }
