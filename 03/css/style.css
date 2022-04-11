@@ -1,0 +1,266 @@
+/* ──────────────────────────────
+ * base
+ ────────────────────────────── */
+@import "https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css";
+
+/* Google Font   */
+@import url("https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi:wght@400;700&display=swap");
+
+/* Google Font Icons  */
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+
+html {
+	scroll-behavior: smooth;
+	font-family: "Kaisei HarunoUmi", serif;
+}
+body {
+	line-height: 1.6;
+}
+img {
+	width: 100%;
+}
+a,
+label,
+button {
+	transition: 0.4s;
+}
+
+/* ──────────────────────────────
+  * .header
+  ────────────────────────────── */
+.header {
+	background-color: #fff;
+	box-shadow: 0 4px 4px -4px rgba(51, 51, 51, 0.4);
+}
+.header_inner {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 18px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.header_logo {
+	font-size: 20px;
+	font-weight: bold;
+}
+.header_nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 8px;
+}
+.header_link {
+	text-decoration: underline;
+}
+.header_link:hover {
+	text-decoration: none;
+}
+
+/* ──────────────────────────────
+  * .footer
+  ────────────────────────────── */
+.footer {
+	color: #fff;
+	background-color: #333;
+	text-align: center;
+}
+.footer_inner {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 32px;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+.footer_logo {
+	font-weight: bold;
+}
+.footer_nav {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	gap: 36px;
+}
+.footer_link {
+	text-decoration: underline;
+}
+.footer_link:hover {
+	text-decoration: none;
+}
+
+/* ──────────────────────────────
+  * .section
+  ────────────────────────────── */
+.section {
+	padding: 72px 0 80px;
+	background-color: #fff;
+}
+.section:nth-of-type(odd) {
+	background-color: #efefef;
+}
+.section_inner {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 16px;
+	text-align: center;
+}
+.section_title {
+	font-size: 28px;
+	font-weight: bold;
+	margin: 0 0 32px;
+}
+.section_copy {
+	font-size: 18px;
+	margin: 0 0 48px;
+}
+
+/* ──────────────────────────────
+  * .fv
+  ────────────────────────────── */
+.fv {
+	min-height: 500px;
+	background-color: rgba(51, 51, 51, 0.7);
+	text-align: center;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	position: relative;
+}
+.fv:before {
+	content: "";
+	position: absolute;
+	top: -5px;
+	bottom: -5px;
+	left: -5px;
+	right: -5px;
+	background-image: url(./../img/fv-bg.jpg);
+	background-size: cover;
+	z-index: -1;
+}
+.fv_inner {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 16px;
+}
+.fv_text {
+	color: #fff;
+}
+.fv_image {
+	max-width: 400px;
+}
+
+.fv_title {
+	font-size: 44px;
+	font-weight: bold;
+}
+.fv_copy {
+	font-size: 24px;
+	letter-spacing: 0.7px;
+	margin: 16px 0 0;
+}
+
+/* ──────────────────────────────
+  * .menu
+  ────────────────────────────── */
+.menu_lists {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 32px;
+}
+.menu_list {
+	max-width: 240px;
+}
+
+/* ──────────────────────────────
+  * .contact
+  ────────────────────────────── */
+
+.contact_form {
+	text-align: left;
+	max-width: 600px;
+	margin: 0 auto;
+}
+.contact_item {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	margin-bottom: 20px;
+}
+.contact_label,
+.contact_input {
+	padding: 10px;
+}
+.contact_label {
+	width: 100%;
+	max-width: 280px;
+	position: relative;
+}
+.contact_input {
+	width: 100%;
+	max-width: 320px;
+	font-size: 16px;
+	border: solid 1px #333;
+	border-radius: 4px;
+}
+.contact_input:focus-visible {
+	outline: #563c11 auto 1px;
+}
+
+textarea.contact_input {
+	height: 160px;
+}
+
+.contact_required {
+	position: absolute;
+	top: 5px;
+	right: 32px;
+
+	color: #fff;
+	background-color: #563c11;
+	border-radius: 2px;
+	padding: 5px 5px;
+	margin: 0 0 0 18px;
+}
+
+.contact_submit {
+	text-align: center;
+	margin-top: 36px;
+}
+.contact_button {
+	display: inline-block;
+	font-size: 14px;
+	font-weight: bold;
+	color: #fff;
+	background-color: #563c11;
+	border: solid 2px #563c11;
+	border-radius: 2px;
+	padding: 8px 16px;
+	width: 320px;
+	max-width: 100%;
+	text-decoration: none;
+	position: relative;
+}
+.contact_button:after {
+	position: absolute;
+	right: 24px;
+	content: "\e5e1";
+	font-family: "Material Icons";
+}
+.contact_button:hover {
+	color: #563c11;
+	background-color: transparent;
+}
+
+/* ──────────────────────────────
+  * utility
+  ────────────────────────────── */
+.inline-block {
+	display: inline-block;
+}

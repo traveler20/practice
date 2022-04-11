@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="どんどこうどん｜CareerLOG（キャリアログ）のLPコーディング課題の03バージョンです。"
+		/>
+		<meta name="author" content="@yurukei20" />
+		<link rel="canonical" href="https://traveler20.github.io/practice/03/" />
+		<meta
+			property="og:title"
+			content="どんどこうどん｜CareerLOG（キャリアログ）LPコーディング課題"
+		/>
+		<meta
+			property="og:site_name"
+			content="どんどこうどん｜CareerLOG（キャリアログ）LPコーディング課題"
+		/>
+		<meta
+			property="og:description"
+			content="どんどこうどん｜CareerLOG（キャリアログ）のLPコーディング課題の03バージョンです。"
+		/>
+		<meta
+			property="og:url"
+			content="https://traveler20.github.io/practice/03/"
+		/>
+		<meta
+			property="og:image"
+			content="https://traveler20.github.io/practice/common/ogp.jpg"
+		/>
+		<meta property="og:type" content="website" />
+		<meta name="twitter:card" content="large" />
+		<meta name="twitter:site" content="@yurukei20" />
+		<meta property="og:locale" content="ja_JP" />
+		<link
+			rel="icon"
+			type="image/x-icon"
+			href="https://traveler20.github.io/practice/common/favicon.ico"
+		/>
+		<link rel="stylesheet" href="./css/style.css" />
+		<title>どんどこうどん｜CareerLOG（キャリアログ）LPコーディング課題</title>
+	</head>
+	<body>
+		<header class="header">
+			<div class="header_inner">
+				<h1 class="header_logo">どんどこうどん</h1>
+				<nav class="header_nav">
+					<a class="header_link" href="#contact">お問い合わせ</a>
+				</nav>
+			</div>
+		</header>
+
+		<main class="main">
+			<section class="fv">
+				<figure class="fv_inner">
+					<figcaption class="fv_text">
+						<h1 class="fv_title">どんどこうどん</h1>
+						<p class="fv_copy">小麦からこだわるうどん屋</p>
+					</figcaption>
+					<picture class="fv_image">
+						<img src="./img/fv-picture.png" alt="" />
+					</picture>
+				</figure>
+			</section>
+
+			<section class="section" id="menu">
+				<div class="section_inner">
+					<h2 class="section_title">
+						<span class="inline-block">どんどこうどんの</span
+						><span class="inline-block">メニュー一覧</span>
+					</h2>
+					<ul class="menu_lists">
+						<li class="menu_list"><img src="./img/menu1.jpg" alt="" /></li>
+						<li class="menu_list"><img src="./img/menu2.jpg" alt="" /></li>
+						<li class="menu_list"><img src="./img/menu3.jpg" alt="" /></li>
+					</ul>
+				</div>
+			</section>
+
+			<section class="section" id="contact">
+				<div class="section_inner">
+					<h2 class="section_title">お問い合わせ</h2>
+					<p class="section_copy">
+						<span class="inline-block">どんどこうどんに対する</span
+						><span class="inline-block">問合せは以下からお願いします。</span>
+					</p>
+					<form
+						action="#"
+						method="POST"
+						target="hidden_iframe"
+						onsubmit="submitted=true;"
+						class="contact_form"
+					>
+						<div class="contact_item">
+							<label class="contact_label" for="field-name"
+								>名前・会社名<span class="contact_required">必須</span></label
+							>
+							<input
+								name="#name"
+								class="contact_input"
+								id="field-name"
+								placeholder="株式会社 山田"
+								type="text"
+								required="required"
+							/>
+						</div>
+						<div class="contact_item">
+							<label class="contact_label" for="field-mail"
+								>メールアドレス<span class="contact_required">必須</span></label
+							>
+							<input
+								name="#name"
+								class="contact_input"
+								id="field-mail"
+								placeholder="sample@gmail.com"
+								type="email"
+								required="required"
+							/>
+						</div>
+						<div class="contact_item">
+							<label class="contact_label" for="field-message"
+								>メッセージ内容</label
+							>
+							<textarea
+								name="#name"
+								class="contact_input"
+								id="field-message"
+								placeholder="お問い合わせ内容"
+							></textarea>
+						</div>
+						<div class="contact_submit">
+							<button type="submit" class="contact_button">問い合わせる</button>
+						</div>
+					</form>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<div class="footer_inner">
+				<a class="footer_logo" href="#">どんどこうどん</a>
+				<nav class="footer_nav">
+					<a class="footer_link" href="#contact">お問い合わせ</a>
+					<small class="footer_copy">&copy;&nbsp;どんどこうどん</small>
+				</nav>
+			</div>
+		</footer>
+	</body>
+</html>

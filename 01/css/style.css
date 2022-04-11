@@ -1,0 +1,169 @@
+/* ──────────────────────────────
+ * reset css
+ ────────────────────────────── */
+@import "https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css";
+
+body {
+	line-height: 1.6;
+}
+
+/* ──────────────────────────────
+ * .header
+ ────────────────────────────── */
+.header {
+	background-color: #fff;
+}
+.header_inner {
+	max-width: 1200px;
+	padding: 18px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.header_logo {
+	font-size: 20px;
+	font-weight: bold;
+}
+.header_button {
+	display: inline-block;
+	font-weight: bold;
+	color: #fff;
+	background-color: #60caad;
+	border: solid 2px #60caad;
+	border-radius: 4px;
+	padding: 8px 14px;
+	transition: 0.4s;
+}
+.header_button:hover {
+	color: #60caad;
+	background-color: #fff;
+}
+
+/* ──────────────────────────────
+ * .fv
+ ────────────────────────────── */
+.fv {
+	min-height: 500px;
+	background-color: #efefef;
+	text-align: center;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.fv_title {
+	font-size: 36px;
+	font-weight: bold;
+}
+.fv_copy {
+	font-size: 24px;
+	margin: 16px 0 48px;
+}
+
+/* ──────────────────────────────
+ * .section
+ ────────────────────────────── */
+.section {
+	padding: 72px 0 80px;
+	background-color: #fff;
+}
+.section:nth-of-type(odd) {
+	background-color: #efefef;
+}
+.section_inner {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 16px;
+	text-align: center;
+}
+.section_title {
+	font-size: 28px;
+	font-weight: bold;
+	margin: 0 0 32px;
+}
+.section_copy {
+	font-size: 18px;
+}
+
+/* ──────────────────────────────
+ * .cta
+ ────────────────────────────── */
+.cta {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.cta_copy {
+	font-size: 18px;
+	font-weight: bold;
+	margin: 48px auto 24px;
+
+	position: relative;
+	display: inline-block;
+	padding: 0 40px;
+}
+.cta_copy:before,
+.cta_copy:after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	display: inline-block;
+	width: 32px;
+	height: 2px;
+	background-color: #333;
+}
+.cta_copy:before {
+	left: 0;
+	transform: rotate(60deg);
+}
+.cta_copy:after {
+	right: 0;
+	transform: rotate(-60deg);
+}
+.cta_button {
+	display: inline-block;
+	font-size: 20px;
+	font-weight: bold;
+	color: #fff;
+	background-color: #60caad;
+	border: solid 2px #60caad;
+	border-radius: 4px;
+	min-width: 270px;
+	padding: 14px;
+	transition: 0.4s;
+}
+.cta_button:hover {
+	color: #60caad;
+	background-color: transparent;
+}
+
+/* ──────────────────────────────
+ * .about
+ ────────────────────────────── */
+.about_content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+.about_image {
+	width: 100%;
+	max-width: 480px;
+}
+.about_description {
+	max-width: 480px;
+	text-align: left;
+}
+
+/* ──────────────────────────────
+ * .footer
+ ────────────────────────────── */
+.footer {
+	color: #fff;
+	background-color: #333;
+	text-align: center;
+	padding: 32px;
+}
