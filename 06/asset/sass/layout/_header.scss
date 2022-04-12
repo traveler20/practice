@@ -1,0 +1,6 @@
+@use "./../foundation/base" as b;
+
+header {
+	color: b.$c-body-black;
+	background-color: b.$c-base-white;
+}
