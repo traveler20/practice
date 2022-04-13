@@ -1,0 +1,30 @@
+// color
+// ──────────────────────────────
+$color-base: #fff;
+$color-main: #1b7c26;
+$color-main-100: #f6fff7;
+$color-main-200: #a0daa8;
+$color-main-300: #6ebe79;
+$color-accent: #f99f48;
+
+$color-gray: #efefef;
+$color-black: #333;
+
+// breakpoint
+// ──────────────────────────────
+@mixin breakpoint($point) {
+	@if $point == tablet {
+		@media (min-width: 640px) {
+			@content;
+		}
+	}
+	@if $point == pc {
+		@media (min-width: 750px) {
+			@content;
+		}
+	}
+}
+@include breakpoint(tablet) {
+}
+@include breakpoint(pc) {
+}

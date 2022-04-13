@@ -1,6 +1,8 @@
+@use "./../../foundation/variable" as v;
+
 .p-fv {
-	background-color: $color-main;
-	color: $color-base;
+	background-color: v.$color-main;
+	color: v.$color-base;
 	// max-height: calc(100vh - 90px);
 
 	&__content {
@@ -40,9 +42,9 @@
 			border-radius: 3px;
 		}
 	}
-	@include breakpoint(tablet) {
+	@include v.breakpoint(tablet) {
 	}
-	@include breakpoint(pc) {
+	@include v.breakpoint(pc) {
 		&__content {
 			flex-direction: row;
 			padding: 60px 0;

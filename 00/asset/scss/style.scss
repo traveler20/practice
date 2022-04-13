@@ -1,14 +1,14 @@
 /*--------------------------------------*
  * foundation
  *--------------------------------------*/
-@import "./foundation/base";
-@import "./foundation/color";
+@use "./foundation/base";
+@use "./foundation/variable";
 
 /*--------------------------------------*
  * layout
  *--------------------------------------*/
-@import "./layout/header";
-@import "./layout/footer";
+@use "./layout/header";
+@use "./layout/footer";
 
 /*--------------------------------------*
  * object
@@ -16,20 +16,20 @@
 /*-------------------
  * component
  -------------------*/
-@import "./object/component/button";
-@import "./object/component/inner";
-@import "./object/component/section";
+@use "./object/component/button";
+@use "./object/component/inner";
+@use "./object/component/section";
 
 /*-------------------
  * project
  -------------------*/
-@import "./object/project/fv";
-@import "./object/project/theme";
-@import "./object/project/solution";
-@import "./object/project/faq";
-@import "./object/project/cv";
+@use "./object/project/fv";
+@use "./object/project/theme";
+@use "./object/project/solution";
+@use "./object/project/faq";
+@use "./object/project/cv";
 
 /*-------------------
  * object
  -------------------*/
-@import "./object/utility/display";
+@use "./object/utility/display";

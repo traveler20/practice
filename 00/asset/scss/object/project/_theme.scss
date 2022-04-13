@@ -1,3 +1,5 @@
+@use "./../../foundation/variable" as v;
+
 .p-theme {
 	&__content {
 		display: flex;
@@ -26,8 +28,8 @@
 			}
 		}
 	}
-	@include breakpoint(tablet) {
+	@include v.breakpoint(tablet) {
 	}
-	@include breakpoint(pc) {
+	@include v.breakpoint(pc) {
 	}
 }

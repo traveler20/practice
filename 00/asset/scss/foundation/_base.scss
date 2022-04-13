@@ -50,20 +50,3 @@ a {
 		}
 	}
 }
-
-@mixin breakpoint($point) {
-	@if $point == tablet {
-		@media (min-width: 640px) {
-			@content;
-		}
-	}
-	@if $point == pc {
-		@media (min-width: 750px) {
-			@content;
-		}
-	}
-}
-@include breakpoint(tablet) {
-}
-@include breakpoint(pc) {
-}

@@ -1,3 +1,5 @@
+@use "./../../foundation/variable" as v;
+
 .p-solution {
 	&__lists {
 		display: flex;
@@ -9,7 +11,7 @@
 	&__list {
 		text-align: center;
 		font-weight: bold;
-		background-color: $color-gray;
+		background-color: v.$color-gray;
 		border-radius: 4px;
 		img {
 			width: 320px;
