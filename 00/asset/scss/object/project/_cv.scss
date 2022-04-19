@@ -1,4 +1,4 @@
-@use "./../../foundation/variable" as v;
+@use "./../../foundation/variable" as *;
 
 .p-cv {
 	&__content {
@@ -12,11 +12,11 @@
 		margin: 10px auto;
 
 		font-size: 2rem;
-		border: 5px solid v.$color-accent;
+		border: 5px solid $color-accent;
 	}
-	@include v.breakpoint(tablet) {
+	@include breakpoint(tablet) {
 	}
-	@include v.breakpoint(pc) {
+	@include breakpoint(pc) {
 		.c-button {
 			font-size: 3.2rem;
 		}

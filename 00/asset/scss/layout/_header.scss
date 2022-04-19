@@ -1,9 +1,9 @@
-@use "./../foundation/variable" as v;
+@use "./../foundation/variable" as *;
 
 .l-header {
 	position: sticky;
 	top: 0;
-	background-color: v.$color-base;
+	background-color: $color-base;
 	z-index: 1;
 
 	&__content {

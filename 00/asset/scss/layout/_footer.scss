@@ -1,8 +1,8 @@
-@use "./../foundation/variable" as v;
+@use "./../foundation/variable" as *;
 
 .l-footer {
-	background-color: v.$color-black;
-	color: v.$color-base;
+	background-color: $color-black;
+	color: $color-base;
 
 	&__content {
 		display: flex;
@@ -15,7 +15,7 @@
 		gap: 10px;
 		padding: 0 0 30px;
 		a {
-			color: v.$color-base;
+			color: $color-base;
 		}
 	}
 }

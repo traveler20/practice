@@ -1,4 +1,4 @@
-@use "./../../foundation/variable" as v;
+@use "./../../foundation/variable" as *;
 
 .p-theme {
 	&__content {
@@ -28,8 +28,8 @@
 			}
 		}
 	}
-	@include v.breakpoint(tablet) {
+	@include breakpoint(tablet) {
 	}
-	@include v.breakpoint(pc) {
+	@include breakpoint(pc) {
 	}
 }
